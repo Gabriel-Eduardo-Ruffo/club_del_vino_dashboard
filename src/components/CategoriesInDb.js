@@ -13,7 +13,7 @@ class CategoriesInDB extends Component {
     //MONTAJE LO QUE VA A RENDERIZAR
     componentDidMount(){
         console.log('metodo de montaje del componente CategoriesInDB');
-        this.apiCall("http://localhost:3030/api/v1/products/listofcategories", this.listCategories);
+        this.apiCall("https://elclubdelvino.herokuapp.com/api/v1/products/listofcategories", this.listCategories);
 
     }
 

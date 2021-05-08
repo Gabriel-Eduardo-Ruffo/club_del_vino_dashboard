@@ -12,7 +12,7 @@ class ListUsers extends Component {
 
     componentDidMount(){
         console.log('metodo de montaje del componente listar los usuarios ListUsers.js');
-        this.apiCall("http://localhost:3030/api/v1/users", this.showUsers);
+        this.apiCall("https://elclubdelvino.herokuapp.com/api/v1/users", this.showUsers);
     }
 
     componentDidUpdate(){

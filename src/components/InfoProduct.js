@@ -15,7 +15,7 @@ class InfoProduct extends Component {
 
     componentDidMount(){
         console.log('metodo de montaje del componente infoProduct.js');
-        this.apiCall("http://localhost:3030/api/v1/products/searchlastproduct", this.showLastProduct);
+        this.apiCall("https://elclubdelvino.herokuapp.com/api/v1/products/searchlastproduct", this.showLastProduct);
     }
 
     componentDidUpdate(){
@@ -35,7 +35,7 @@ class InfoProduct extends Component {
 			lastProductName: data.products.product_name,
             lastProductDescription: data.products.description,
             lastProductDateCreatedAt: data.products.createAt,   
-            lastProductLinkDescription:'http://localhost:3030/products/productDescription/'+ data.products.id_product          
+            lastProductLinkDescription:'https://elclubdelvino.herokuapp.com/products/productDescription/'+ data.products.id_product          
 		})
     }
 

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import imgTemp from '../assets/images/cargando.gif';
+//import imgTemp from '../assets/images/cargando.gif';
 
 
 class ListProducts extends Component {
@@ -12,7 +12,7 @@ class ListProducts extends Component {
 
     componentDidMount(){
         console.log('metodo de montaje del componente listar los productos ListProduct.js');
-        this.apiCall("http://localhost:3030/api/v1/products/list", this.showProducts);
+        this.apiCall("https://elclubdelvino.herokuapp.com/api/v1/products/list", this.showProducts);
     }
 
     componentDidUpdate(){

@@ -14,9 +14,9 @@ class ContentRowProducts extends Component {
 	//cuando monta todo lo que tiene que renderizar
 	componentDidMount(){
 		console.log('metodo de montaje del componente ContentRowProducts');
-		this.apiCall("https://elclubdelvino.herokuapp.com//api/v1/products/list", this.showCantProducts);
-		this.apiCall("https://elclubdelvino.herokuapp.com//api/v1/products/listofcategories", this.showCantCategories);
-		this.apiCall("https://elclubdelvino.herokuapp.com//api/v1/users", this.showCantUsers);
+		this.apiCall("https://elclubdelvino.herokuapp.com/api/v1/products/list", this.showCantProducts);
+		this.apiCall("https://elclubdelvino.herokuapp.com/api/v1/products/listofcategories", this.showCantCategories);
+		this.apiCall("https://elclubdelvino.herokuapp.com/api/v1/users", this.showCantUsers);
 	}
 
 	//cuando actualiza el componente
