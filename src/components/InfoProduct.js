@@ -63,7 +63,7 @@ class InfoProduct extends Component {
                     </div>
                     <div className="card-body">
                         <div className="text-center">
-                            <img src={this.state.lastProductVinoImageUrl} className="img-fluid px-3 px-sm-4 mt-3 mb-4"  style={{width:400}} alt=" Info vino category "></img>
+                            <img src={this.state.lastProductVinoImageUrl} className="img-fluid px-3 px-sm-4 mt-3 mb-4"  style={{width:300}} alt=" Info vino category "></img>
                         </div>
                         <p>Fecha de creacion: {showLastProductDateCreate}</p>
                         <p>{this.state.lastProductDescription}</p>
